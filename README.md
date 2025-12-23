@@ -500,12 +500,6 @@ This is suitable for forms with backend validation.
 
 For simplicity, adding interceptors through `ApiConsumer` isn't supported directly. You can add interceptors to the instance of `Dio` that is sent to `DioConsumer`.
 
-## TODO
-
-- [ ] Add examples
-- [ ] Add native support for downloads methods
-- [ ] Convert to a package
-
 ## Contributing
 
 Contributions are welcome. Please ensure:

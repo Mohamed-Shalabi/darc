@@ -57,7 +57,8 @@ class CancelledRequestException<Data> extends RequestException<Data> {
 class RequestUnknownException<Data> extends RequestException<Data> {
   RequestUnknownException({String? message})
       : super(
-            spareMessage: message ?? ApiErrorMessages.instance.unknownError());
+          spareMessage: message ?? ApiErrorMessages.instance.unknownError(),
+        );
 }
 
 // ================= exceptions with body =================

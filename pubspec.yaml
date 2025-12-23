@@ -1,6 +1,6 @@
 name: darc
 description: "DARC provides a minimal yet powerful public HTTP Requests interface while internalizing all the complexity"
-version: 0.0.5
+version: 0.0.6
 
 homepage: https://github.com/Mohamed-Shalabi/darc
 repository: https://github.com/Mohamed-Shalabi/darc
