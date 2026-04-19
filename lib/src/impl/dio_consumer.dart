@@ -51,7 +51,12 @@ class DioConsumer implements ApiConsumer<DioDownloadCanceller> {
 
   @override
   Future<void> setToken(ApiOAuth2Token token) async {
-    await tokenInterceptor.setToken(token);
+    final isInitialized = await this.isInitialized;
+    if (!isInitialized) {
+      throw Exception('DioConsumer is not initialized');
+    }
+
+    return tokenInterceptor.setToken(token);
   }
 
   @override
@@ -63,7 +68,12 @@ class DioConsumer implements ApiConsumer<DioDownloadCanceller> {
   }
 
   @override
-  Future<void> removeToken() {
+  Future<void> removeToken() async {
+    final isInitialized = await this.isInitialized;
+    if (!isInitialized) {
+      throw Exception('DioConsumer is not initialized');
+    }
+
     return tokenInterceptor.clearToken();
   }
 

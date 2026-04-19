@@ -1,6 +1,6 @@
 name: darc
 description: "DARC provides a minimal yet powerful public HTTP Requests interface while internalizing all the complexity"
-version: 0.0.6
+version: 0.0.7
 
 homepage: https://github.com/Mohamed-Shalabi/darc
 repository: https://github.com/Mohamed-Shalabi/darc
@@ -12,10 +12,10 @@ environment:
 
 dependencies:
   dio: ^5.9.0
-  equatable: ^2.0.7
+  equatable: ^2.0.8
   fpdart: ^1.2.0
-  fresh_dio: ^0.4.4
-  meta: ^1.17.0
+  fresh_dio: ^0.6.0
+  meta: ^1.18.2
   path: ^1.9.1
 
 dev_dependencies:

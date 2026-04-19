@@ -14,9 +14,9 @@ dependencies:
     path: ../
 
   dio: ^5.9.0
-  fresh_dio: ^0.4.4
+  fresh_dio: ^0.6.0
   fpdart: ^1.2.0
   path: ^1.9.1
 
 dev_dependencies:
-  lints: ^5.1.1
+  lints: ^6.1.0
